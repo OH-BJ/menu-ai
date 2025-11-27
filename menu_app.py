@@ -50,7 +50,7 @@ if submit_btn:
         st.warning("옵션이 완성되지 않았어요! (싫어하는 음식 빼고) 모든 빈칸을 채워주세요.")
         st.stop()
         
-    GOOGLE_API_KEY = 'AIzaSyCJSp7tAEMT4vtagCyX_4PKGuI1NZGBykI'.strip()
+    GOOGLE_API_KEY = '여기에_당신의_API키를_입력하세요'.strip()
     
     genai.configure(api_key=GOOGLE_API_KEY)
     model = genai.GenerativeModel('gemini-2.5-flash')
@@ -130,4 +130,5 @@ if submit_btn:
             st.error(f"오류: {e}")
 
 else:
+
     st.info("👈 왼쪽 사이드바에서 옵션을 선택해주세요.")
